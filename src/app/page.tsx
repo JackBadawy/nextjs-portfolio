@@ -3,7 +3,9 @@ import DisplayProjects from "./Containers/DisplayProjects";
 export default function Home() {
   return (
     <div>
-      <DisplayProjects identifyer="" />
+      <div className="flex justify-center">
+        <DisplayProjects identifyer="" />
+      </div>
     </div>
   );
 }
