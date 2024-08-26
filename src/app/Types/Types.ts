@@ -5,3 +5,11 @@ export type Project = {
   projectRepositoryLink: string;
   projectLiveDeployLink?: string;
 };
+
+export type Skill = {
+  name: string;
+  image: string;
+  alt: string;
+  description: string;
+  projects?: string[];
+};
