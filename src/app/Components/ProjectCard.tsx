@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
+import Image from "next/image";
 
 interface ProjectCard extends Project {
   index: number;
@@ -21,6 +22,15 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
       <p className="font-bold text-center mt-4">{projectInfo.projectName}</p>
       <p>{projectInfo.projectDescription}</p>
       <p>{projectInfo.projectImage}</p>
+      {projectInfo.projectImage && (
+        <Image
+          src={projectInfo.projectImage}
+          width="64"
+          height="64"
+          alt="Pictue of a calculator"
+        />
+      )}
+
       <div className="my-4 rounded">
         <Link
           href={projectInfo.projectRepositoryLink}
@@ -30,7 +40,14 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
         </Link>
       </div>
       {projectInfo.projectLiveDeployLink && (
-        <p>{projectInfo.projectLiveDeployLink}</p>
+        <div className="my-4">
+          <Link
+            href={projectInfo.projectLiveDeployLink}
+            className="underline bg-black p-2"
+          >
+            Live Deploy
+          </Link>
+        </div>
       )}
     </div>
   );
