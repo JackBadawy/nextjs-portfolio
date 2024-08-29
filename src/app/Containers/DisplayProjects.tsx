@@ -4,7 +4,10 @@ import { projectList } from "../Data/ProjectList";
 const DisplayProjects = (identifyer: string) => {
   //will have identifyer be passed into component to show specific projects map projects
   return (
-    <div className="flex flex-wrap justify-center bg-slate-300 rounded pb-8">
+    <div
+      id="projects"
+      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8"
+    >
       <div className="basis-full">
         <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
           Projects:

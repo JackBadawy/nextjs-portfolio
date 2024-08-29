@@ -3,7 +3,10 @@ import { skillList } from "../Data/SkillList";
 
 const SkillsDisplay = () => {
   return (
-    <div className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 my-8">
+    <div
+      id="skills"
+      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mb-8 mt-1"
+    >
       <div className="basis-full ">
         <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
           Skills:
