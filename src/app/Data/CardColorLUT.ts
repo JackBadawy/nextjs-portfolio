@@ -7,6 +7,10 @@ export const assignCardColor = (i: number) => {
   return CardColorTable[v];
 };
 
+export const assignHoverColor = (colorClass: string) => {
+  return `hover:${colorClass.replace(/-700$/, "-800")}`;
+};
+
 export const CardColorTable = {
   0: "bg-pink-700",
   1: "bg-red-700",

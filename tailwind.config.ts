@@ -5,6 +5,15 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./data/**/*.ts",
+  ],
+  safelist: [
+    "hover:bg-pink-800",
+    "hover:bg-red-800",
+    "hover:bg-blue-800",
+    "hover:bg-green-800",
+    "hover:bg-yellow-800",
+    "hover:bg-slate-800",
   ],
   theme: {
     extend: {

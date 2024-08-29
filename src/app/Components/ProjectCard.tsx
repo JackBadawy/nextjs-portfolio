@@ -1,19 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { assignCardColor } from "../Data/CardColorLUT";
+import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
 
 interface ProjectCard extends Project {
   index: number;
 }
-//might add proj type back here if not used elsewhere
 
 const ProjectCard: React.FC<ProjectCard> = (props) => {
   const { index, ...projectInfo } = props;
 
+  const baseColorClass = assignCardColor(index);
+  const hoverColorClass = assignHoverColor(baseColorClass);
+
   return (
-    <div className={`w-64 border rounded px-4 ${assignCardColor(index)}`}>
+    <div
+      className={`w-64 border rounded px-4 ${baseColorClass} ${hoverColorClass}`}
+    >
       <p className="font-bold text-center mt-4">{projectInfo.projectName}</p>
       <p>{projectInfo.projectDescription}</p>
       <p>{projectInfo.projectImage}</p>
