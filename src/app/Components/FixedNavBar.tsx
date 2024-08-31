@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import NavButton from "../Buttons/NavButton";
 
 const FixedNavBar = () => {
-  //might need nav standin for space
   return (
     <>
       <div className="w-full h-16"></div>
@@ -17,13 +17,9 @@ const FixedNavBar = () => {
           />
         </div>
         <div className="text-black">
-          <ul className="flex gap-2 px-2">
-            <li className="bg-gray-500">
-              <Link href={"#skills"}>Skills</Link>
-            </li>
-            <li className="bg-gray-500">
-              <Link href={"#projects"}>Projects</Link>
-            </li>
+          <ul className="flex gap-2 mr-8">
+            <NavButton lnk="#skills" name="Skills" />
+            <NavButton lnk="#projects" name="Projects" />
           </ul>
         </div>
       </nav>
