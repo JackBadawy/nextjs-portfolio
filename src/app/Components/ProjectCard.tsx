@@ -4,6 +4,7 @@ import Link from "next/link";
 import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
 import Image from "next/image";
+import "../styles/styles.css";
 
 interface ProjectCard extends Project {
   index: number;
