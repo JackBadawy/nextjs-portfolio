@@ -19,6 +19,13 @@ export const assignHoverColor = (colorClass: string) => {
   return `hover:${updatedColorClass}`;
 };
 
+export const darkenColor = (colorClass: string) => {
+  return colorClass.replace(/-(\d{3})$/, (_, p1) => {
+    const newColorValue = parseInt(p1) + 100;
+    return `-${newColorValue}`;
+  });
+};
+
 export const CardColorTable = {
   0: "bg-pink-700",
   1: "bg-red-700",

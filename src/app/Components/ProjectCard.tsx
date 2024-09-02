@@ -4,6 +4,7 @@ import Link from "next/link";
 import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
 import Image from "next/image";
+import LinkButton from "../Buttons/LinkButton";
 
 interface ProjectCard extends Project {
   index: number;
@@ -32,12 +33,16 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
       )}
 
       <div className="my-4 rounded">
-        <Link
+        {/* <Link
           href={projectInfo.projectRepositoryLink}
           className="underline bg-black p-2"
         >
           Github Repo
-        </Link>
+        </Link> */}
+        <LinkButton
+          clr={baseColorClass}
+          lnk={projectInfo.projectRepositoryLink}
+        />
       </div>
       {projectInfo.projectLiveDeployLink && (
         <div className="my-4">
