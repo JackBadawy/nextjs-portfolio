@@ -7,8 +7,16 @@ export const assignCardColor = (i: number) => {
   return CardColorTable[v];
 };
 
-export const assignHoverColor = (colorClass: string) => {
+/* export const assignHoverColor = (colorClass: string) => {
   return `hover:${colorClass.replace(/-700$/, "-800")}`;
+}; */
+
+export const assignHoverColor = (colorClass: string) => {
+  const updatedColorClass = colorClass.replace(/-(\d{3})$/, (_, p1) => {
+    const newColorValue = parseInt(p1) + 100;
+    return `-${newColorValue}`;
+  });
+  return `hover:${updatedColorClass}`;
 };
 
 export const CardColorTable = {

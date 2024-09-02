@@ -1,7 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import { assignHoverColor } from "../Data/CardColorLUT";
 
-const ProjectLinkButton = () => {
+const ProjectLinkButton = (clr) => {
   return (
     <Link
       href={projectInfo.projectRepositoryLink}

@@ -10,6 +10,7 @@ const config: Config = {
   safelist: [
     {
       pattern: /^bg-/,
+      variants: ["hover"],
     },
   ],
   theme: {
