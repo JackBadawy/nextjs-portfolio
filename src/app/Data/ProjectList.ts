@@ -8,6 +8,7 @@ export const projectList = [
   {
     projectName: "Employee Directory/HR System (Azure)",
     projectDescription: "A full stack employee directory application",
+    projectImage: "/img/database.svg",
     projectRepositoryLink: "https://github.com/JackBadawy/Employee_Creator_API",
     projectLiveDeployLink: "https://main--roaring-torte-981154.netlify.app/",
   },

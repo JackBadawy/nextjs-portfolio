@@ -18,21 +18,21 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
 
   return (
     <div
-      className={`w-64 border rounded px-4 ${baseColorClass} ${hoverColorClass}`}
+      className={`w-52 rounded-md px-4 ${baseColorClass} ${hoverColorClass} text-center`}
     >
       <p className="font-bold text-center mt-4">{projectInfo.projectName}</p>
-      <p>{projectInfo.projectDescription}</p>
-      <p>{projectInfo.projectImage}</p>
       {projectInfo.projectImage && (
         <Image
           src={projectInfo.projectImage}
           width="64"
           height="64"
-          alt="Pictue of a calculator"
+          alt="Picture of a calculator"
+          className={`mx-auto fill-current text-blue-500 opacity-60`}
         />
       )}
+      <p>{projectInfo.projectDescription}</p>
 
-      <div className="my-4 rounded">
+      <div className="my-4 rounded flex gap-1 justify-center">
         {/* <Link
           href={projectInfo.projectRepositoryLink}
           className="underline bg-black p-2"
@@ -42,18 +42,17 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
         <LinkButton
           clr={baseColorClass}
           lnk={projectInfo.projectRepositoryLink}
+          txt="Github Repo"
         />
+
+        {projectInfo.projectLiveDeployLink && (
+          <LinkButton
+            clr={baseColorClass}
+            lnk={projectInfo.projectLiveDeployLink}
+            txt="Live Deploy"
+          />
+        )}
       </div>
-      {projectInfo.projectLiveDeployLink && (
-        <div className="my-4">
-          <Link
-            href={projectInfo.projectLiveDeployLink}
-            className="underline bg-black p-2"
-          >
-            Live Deploy
-          </Link>
-        </div>
-      )}
     </div>
   );
 };

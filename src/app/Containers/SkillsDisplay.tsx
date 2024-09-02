@@ -5,7 +5,7 @@ const SkillsDisplay = () => {
   return (
     <div
       id="skills"
-      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mb-8 mt-1"
+      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mb-8 mt-1 mx-2"
     >
       <div className="basis-full ">
         <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">

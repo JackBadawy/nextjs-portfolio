@@ -6,14 +6,14 @@ const DisplayProjects = (identifyer: string) => {
   return (
     <div
       id="projects"
-      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8"
+      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mx-2"
     >
       <div className="basis-full">
         <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
           Projects:
         </h2>
       </div>
-      <div className="flex flex-wrap gap-2 justify-center px-36">
+      <div className="flex flex-wrap gap-4 justify-center px-36">
         {projectList.map((project, index) => {
           return <ProjectCard key={index} {...project} index={index} />;
         })}

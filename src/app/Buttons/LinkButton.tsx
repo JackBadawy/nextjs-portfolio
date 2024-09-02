@@ -4,16 +4,19 @@ import { assignHoverColor, darkenColor } from "../Data/CardColorLUT";
 type LinkButtonProps = {
   clr: string;
   lnk: string;
+  txt: string;
 };
 
-const LinkButton: React.FC<LinkButtonProps> = ({ clr, lnk }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({ clr, lnk, txt }) => {
   const baseClr = darkenColor(clr);
   return (
     <Link
       href={lnk}
-      className={`underline ${baseClr} ${assignHoverColor(baseClr)} p-2`}
+      className={`${baseClr} ${assignHoverColor(
+        baseClr
+      )} p-2 rounded-md h-10 text-nowrap`}
     >
-      Github Repo
+      {txt}
     </Link>
   );
 };
