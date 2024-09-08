@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
 
   return (
     <div
-      className={`w-52 rounded-md px-4 ${baseColorClass} ${hoverColorClass} text-center`}
+      className={`w-52 rounded-md px-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg`}
     >
       <p className="font-bold text-center mt-4">{projectInfo.projectName}</p>
       {projectInfo.projectImage && (

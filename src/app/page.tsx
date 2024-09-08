@@ -1,4 +1,5 @@
 import FixedNavBar from "./Components/FixedNavBar";
+import AboutMe from "./Containers/AboutMe";
 import DisplayProjects from "./Containers/DisplayProjects";
 import SkillsDisplay from "./Containers/SkillsDisplay";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <FixedNavBar />
         <SkillsDisplay />
         <DisplayProjects identifyer="" />
+        <AboutMe />
       </div>
     </div>
   );
