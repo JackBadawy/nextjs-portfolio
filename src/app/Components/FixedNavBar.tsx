@@ -20,6 +20,7 @@ const FixedNavBar = () => {
           <ul className="flex gap-2 mr-8">
             <NavButton lnk="#skills" name="Skills" />
             <NavButton lnk="#projects" name="Projects" />
+            <NavButton lnk="#aboutMe" name="About Me" />
           </ul>
         </div>
       </nav>

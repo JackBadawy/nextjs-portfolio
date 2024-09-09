@@ -33,12 +33,6 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
       <p>{projectInfo.projectDescription}</p>
 
       <div className="my-4 rounded flex gap-1 justify-center">
-        {/* <Link
-          href={projectInfo.projectRepositoryLink}
-          className="underline bg-black p-2"
-        >
-          Github Repo
-        </Link> */}
         <LinkButton
           clr={baseColorClass}
           lnk={projectInfo.projectRepositoryLink}
