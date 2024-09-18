@@ -13,51 +13,57 @@ export const projectList = [
     projectLiveDeployLink: "https://main--roaring-torte-981154.netlify.app/",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "To-do App (Java/React)",
+    projectDescription:
+      "A full stack Todo application made with Java Springboot and react",
+    projectRepositoryLink: "https://github.com/JackBadawy/todoApp_Spring-React",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Fake OS - Windows 95",
+    projectDescription:
+      "A webpage designed to emulate some of the functionality of the windows 95 desktop",
+    projectRepositoryLink:
+      "https://github.com/JackBadawy/fakeOs_project_Jack_Badawy",
+    projectLiveDeployLink: "https://kaleidoscopic-beignet-f699fb.netlify.app",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Morse Code translator",
+    projectDescription:
+      "A webapp that can translate english to morse code and back again",
+    projectRepositoryLink:
+      "https://github.com/JackBadawy/morse_code_project_Jack_Badawy",
+    projectLiveDeployLink: "https://fancy-daffodil-cc62d1.netlify.app",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "E-shop Project",
+    projectDescription:
+      "A computer store website with all product and cart data stored in firestore",
+    projectRepositoryLink: "https://github.com/JackBadawy/e_shop_project",
+    projectLiveDeployLink: "https://main--roaring-torte-981154.netlify.app/",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Minesweeper Java CLI",
+    projectDescription: "A minesweeper CLI made with Java",
+    projectRepositoryLink: "https://github.com/JackBadawy/Minesweeper-Java",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Postcode API - Java",
+    projectDescription:
+      "An api that returns the surburb name of a postcode entered and vice versa",
+    projectRepositoryLink: "https://github.com/JackBadawy/PostcodeApi",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Google books API search engine",
+    projectDescription:
+      "A search engine to navigate the google books api in a user friendly way",
+    projectRepositoryLink:
+      "https://github.com/JackBadawy/books_api_search_engine",
+    projectLiveDeployLink: "https://candid-biscotti-9cf86a.netlify.app/",
   },
   {
-    projectName: "Employee Directory/HR System (Azure)",
-    projectDescription: "A full stack employee directory application",
-    projectRepositoryLink: "placeholder url",
-    projectLiveDeployLink: "pl url",
+    projectName: "Calculator - Java/Swing",
+    projectDescription: "A Calculator desktop application made with Swing",
+    projectRepositoryLink: "https://github.com/JackBadawy/swing_calculator",
+    projectImage: "/img/calculator.svg",
   },
 ];
