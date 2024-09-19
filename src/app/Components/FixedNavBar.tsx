@@ -14,9 +14,7 @@ const FixedNavBar = () => {
             width="236"
             alt="Signature logo"
           />
-          <p className="text-slate-800 underline text-xl font-medium">
-            Full-Stack Developer
-          </p>
+          <p className="text-black text-xl font-jacq">-Full-Stack-Developer-</p>
         </div>
         <div>
           <ul className="flex gap-2 mr-8">
