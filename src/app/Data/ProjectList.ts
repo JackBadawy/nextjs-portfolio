@@ -18,14 +18,7 @@ export const projectList = [
       "A full stack Todo application made with Java Springboot and react",
     projectRepositoryLink: "https://github.com/JackBadawy/todoApp_Spring-React",
   },
-  {
-    projectName: "Fake OS - Windows 95",
-    projectDescription:
-      "A webpage designed to emulate some of the functionality of the windows 95 desktop",
-    projectRepositoryLink:
-      "https://github.com/JackBadawy/fakeOs_project_Jack_Badawy",
-    projectLiveDeployLink: "https://kaleidoscopic-beignet-f699fb.netlify.app",
-  },
+
   {
     projectName: "Morse Code translator",
     projectDescription:
@@ -61,9 +54,17 @@ export const projectList = [
     projectLiveDeployLink: "https://candid-biscotti-9cf86a.netlify.app/",
   },
   {
-    projectName: "Calculator - Java/Swing",
+    projectName: "Calculator (Swing)",
     projectDescription: "A Calculator desktop application made with Swing",
     projectRepositoryLink: "https://github.com/JackBadawy/swing_calculator",
     projectImage: "/img/calculator.svg",
+  },
+  {
+    projectName: "Fake OS - Windows 95",
+    projectDescription:
+      "A webpage designed to emulate some of the functionality of the windows 95 desktop",
+    projectRepositoryLink:
+      "https://github.com/JackBadawy/fakeOs_project_Jack_Badawy",
+    projectLiveDeployLink: "https://kaleidoscopic-beignet-f699fb.netlify.app",
   },
 ];
