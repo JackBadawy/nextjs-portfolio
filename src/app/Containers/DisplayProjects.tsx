@@ -2,21 +2,15 @@ import ProjectCard from "../Components/ProjectCard";
 import { projectList } from "../Data/ProjectList";
 
 const DisplayProjects = (identifyer: string) => {
-  //will have identifyer be passed into component to show specific projects map projects
   return (
-    <div
-      id="projects"
-      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mx-2"
-    >
-      <div className="basis-full">
-        <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
-          Projects:
-        </h2>
-      </div>
-      <div className="flex flex-wrap gap-4 justify-center px-36">
-        {projectList.map((project, index) => {
-          return <ProjectCard key={index} {...project} index={index} />;
-        })}
+    <div id="projects" className="bg-slate-300 rounded pb-8 mx-2">
+      <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
+        Projects:
+      </h2>
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 2xl:columns-6 gap-4 px-4 sm:px-6 md:px-8 space-y-4 ">
+        {projectList.map((project, index) => (
+          <ProjectCard key={index} {...project} index={index} />
+        ))}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
 import Image from "next/image";
@@ -18,21 +17,23 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
 
   return (
     <div
-      className={`w-52 rounded-md px-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg transition-all duration-300`}
+      className={`break-inside-avoid flex flex-col justify-between rounded-md p-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg transition-all duration-300 mb-4`}
     >
-      <p className="font-bold text-center mt-4">{projectInfo.projectName}</p>
-      {projectInfo.projectImage && (
-        <Image
-          src={projectInfo.projectImage}
-          width="64"
-          height="64"
-          alt="Picture of a calculator"
-          className={`mx-auto fill-current text-blue-500 opacity-60`}
-        />
-      )}
-      <p>{projectInfo.projectDescription}</p>
+      <div>
+        <p className="font-bold text-center mb-4">{projectInfo.projectName}</p>
+        {projectInfo.projectImage && (
+          <Image
+            src={projectInfo.projectImage}
+            width="64"
+            height="64"
+            alt="Picture of a calculator"
+            className={`mx-auto fill-current text-blue-500 opacity-60 mb-4`}
+          />
+        )}
+        <p>{projectInfo.projectDescription}</p>
+      </div>
 
-      <div className="my-4 rounded flex gap-1 justify-center">
+      <div className="mt-4 rounded flex gap-1 justify-center">
         <LinkButton
           clr={baseColorClass}
           lnk={projectInfo.projectRepositoryLink}
