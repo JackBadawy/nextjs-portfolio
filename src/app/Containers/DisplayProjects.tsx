@@ -1,7 +1,7 @@
 import ProjectCard from "../Components/ProjectCard";
 import { projectList } from "../Data/ProjectList";
 
-const DisplayProjects = (identifyer: string) => {
+const DisplayProjects = () => {
   return (
     <div id="projects" className="bg-slate-300 rounded pb-8 mx-2">
       <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">

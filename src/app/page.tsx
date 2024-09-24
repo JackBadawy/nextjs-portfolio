@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col justify-center mx-auto bg-slate-200 min-h-screen">
         <FixedNavBar />
         <SkillsDisplay />
-        <DisplayProjects identifyer="" />
+        <DisplayProjects />
         <AboutMe />
       </div>
     </div>
