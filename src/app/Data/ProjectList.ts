@@ -1,5 +1,13 @@
 export const projectList = [
   {
+    projectName: "Resume Builder",
+    projectDescription:
+      "A Web app that generates docx resume's In an ATS friendly manner",
+    projectImage: "/img/document.svg",
+    projectRepositoryLink: "https://github.com/JackBadawy/resume_builder",
+    projectLiveDeployLink: "https://resumebuilderjb.netlify.app/",
+  },
+  {
     projectName: "Calculator (JavaFX)",
     projectDescription: "A calculator desktop app made with JavaFX",
     projectImage: "/img/calculator.svg",

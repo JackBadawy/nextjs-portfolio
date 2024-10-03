@@ -12,6 +12,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ clr, lnk, txt }) => {
   return (
     <Link
       href={lnk}
+      target="_blank"
       className={`${baseClr} ${assignHoverColor(
         baseClr
       )} p-2 rounded-md h-10 text-nowrap`}
