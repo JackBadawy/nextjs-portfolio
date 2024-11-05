@@ -1,5 +1,12 @@
 export const projectList = [
   {
+    projectName: "Hedonic Calculator",
+    projectDescription:
+      "A Web app that calcculates the best course of action to take in a given situation",
+    projectImage: "/img/calculator.svg",
+    projectRepositoryLink: "https://github.com/JackBadawy/hCalc",
+  },
+  {
     projectName: "Resume Builder",
     projectDescription:
       "A Web app that generates docx resume's In an ATS friendly manner",
