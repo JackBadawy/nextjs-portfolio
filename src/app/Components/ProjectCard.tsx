@@ -4,6 +4,7 @@ import { assignCardColor, assignHoverColor } from "../Data/CardColorLUT";
 import { Project } from "../Types/Types";
 import Image from "next/image";
 import LinkButton from "../Buttons/LinkButton";
+import { useState } from "react";
 
 interface ProjectCard extends Project {
   index: number;
@@ -15,9 +16,13 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
   const baseColorClass = assignCardColor(index);
   const hoverColorClass = assignHoverColor(baseColorClass);
 
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
     <div
       className={`break-inside-avoid flex flex-col justify-between rounded-md p-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg transition-all duration-300 mb-4`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
       <div>
         <p className="font-bold text-center mb-4">{projectInfo.projectName}</p>
@@ -33,11 +38,12 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
         <p>{projectInfo.projectDescription}</p>
       </div>
 
-      <div className="mt-4 rounded flex gap-1 justify-center">
+      <div className="group mt-4 rounded flex gap-1 justify-center">
         <LinkButton
           clr={baseColorClass}
           lnk={projectInfo.projectRepositoryLink}
           txt="Github Repo"
+          cardHvr={isHovering}
         />
 
         {projectInfo.projectLiveDeployLink && (
@@ -45,6 +51,7 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
             clr={baseColorClass}
             lnk={projectInfo.projectLiveDeployLink}
             txt="Live Deploy"
+            cardHvr={isHovering}
           />
         )}
       </div>

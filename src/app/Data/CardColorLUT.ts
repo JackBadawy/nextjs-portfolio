@@ -1,6 +1,6 @@
 export const assignCardColor = (i: number) => {
   if (i % 3 === 0) {
-    return "bg-slate-500";
+    return "bg-slate-400";
   }
   const adjustedIndex = i - Math.floor(i / 3);
   const v = (adjustedIndex % 5) as keyof typeof CardColorTable;
@@ -8,16 +8,13 @@ export const assignCardColor = (i: number) => {
 };
 
 export const assignHoverColor = (colorClass: string) => {
-  const updatedColorClass = colorClass.replace(/-(\d{3})$/, (_, p1) => {
-    const newColorValue = parseInt(p1) + 100;
-    return `-${newColorValue}`;
-  });
+  const updatedColorClass = darkenColor(colorClass);
   return `hover:${updatedColorClass}`;
 };
 
 export const darkenColor = (colorClass: string) => {
   return colorClass.replace(/-(\d{3})$/, (_, p1) => {
-    const newColorValue = parseInt(p1) + 300;
+    const newColorValue = parseInt(p1) + 100;
     return `-${newColorValue}`;
   });
 };
