@@ -5,6 +5,8 @@ export const projectList = [
       "A Web app that calcculates the best course of action to take in a given situation",
     projectImage: "/img/calculator.svg",
     projectRepositoryLink: "https://github.com/JackBadawy/hCalc",
+    projectLiveDeployLink:
+      "https://gentle-wave-01f645f1e.4.azurestaticapps.net/login",
   },
   {
     projectName: "Resume Builder",
@@ -13,6 +15,13 @@ export const projectList = [
     projectImage: "/img/document.svg",
     projectRepositoryLink: "https://github.com/JackBadawy/resume_builder",
     projectLiveDeployLink: "https://resumebuilderjb.netlify.app/",
+  },
+  {
+    projectName: "Rhyme Finder",
+    projectDescription:
+      "a CLI program for finding semantically relevant perfect and slant rhymes for a given word",
+    projectImage: "/img/document.svg",
+    projectRepositoryLink: "https://github.com/JackBadawy/Rhyme_Program",
   },
   {
     projectName: "Calculator (JavaFX)",
