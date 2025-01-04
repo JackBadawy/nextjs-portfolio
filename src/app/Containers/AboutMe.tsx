@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div className="w-72">
             <h3 className="font-extrabold underline">Who I am</h3>
             <p>
-              I&apos;m Jack. A Junior full stack developer based in Melbourne,
+              I&apos;m Jack. A full stack developer based in Melbourne,
               Australia. Programming is my passion and I enjoy all thing Tech.
               Asides from Programming my greatest joys come from reading a good
               book and spending time in my garden.

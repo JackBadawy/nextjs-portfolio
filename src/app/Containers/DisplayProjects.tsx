@@ -12,7 +12,7 @@ const DisplayProjects = () => {
         <div className="basis-full absolute -top-[47px] left-12">
           <SubHeading txt="Projects" />
         </div>
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 2xl:columns-6 gap-2 px-4 sm:px-6 md:px-8 space-y-4 ">
+        <div className="flex flex-wrap gap-2 px-4 sm:px-6 md:px-8  ">
           {projectList.map((project, index) => (
             <ProjectCard key={index} {...project} index={index} />
           ))}

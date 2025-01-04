@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCard> = (props) => {
 
   return (
     <div
-      className={`break-inside-avoid flex flex-col justify-between rounded-md p-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg transition-all duration-300 mb-4`}
+      className={`break-inside-avoid flex flex-col justify-between rounded-md p-4 ${baseColorClass} ${hoverColorClass} text-center shadow-lg transition-all duration-300 mb-4 w-60`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >

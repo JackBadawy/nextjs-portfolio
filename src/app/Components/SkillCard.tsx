@@ -5,7 +5,7 @@ const SkillCard: React.FC<Skill> = (props) => {
   const { ...skill } = props;
 
   return (
-    <div className="w-32  rounded bg-slate-400 hover:bg-slate-500 p-4 flex flex-col items-center text-slate-900 shadow-lg transition-all duration-300">
+    <div className="w-32 rounded bg-slate-400 hover:bg-slate-500 p-4 flex flex-col items-center text-slate-900 shadow-lg transition-all duration-300">
       <p className="font-bold text-center">{skill.name}</p>
       <Image
         src={skill.image}
