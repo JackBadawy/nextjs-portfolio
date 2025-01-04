@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import SubHeading from "../Components/Subheading";
 const AboutMe = () => {
   return (
     <div
       id="aboutMe"
-      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mb-8 mt-1 mx-2 px-8"
+      className="rounded relative p-1 mt-16 mb-2 mx-2 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-300"
     >
-      <div className="basis-full text-slate-800">
-        <h2 className="text-3xl py-6  font-extrabold">About Me:</h2>
+      <div className="basis-full text-slate-800 relative flex flex-wrap justify-center bg-slate-300 rounded pt-16 pb-8">
+        <div className="basis-full absolute -top-[47px] left-12">
+          <SubHeading txt="About Me" />
+        </div>
         <div className="flex flex-wrap justify-center gap-24 items-center">
           <div className="w-72">
             <h3 className="font-extrabold underline">Who I am</h3>

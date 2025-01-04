@@ -1,24 +1,24 @@
 import SkillCard from "../Components/SkillCard";
+import SubHeading from "../Components/Subheading";
 import { skillList } from "../Data/SkillList";
 
 const SkillsDisplay = () => {
   return (
     <div
       id="skills"
-      className="flex flex-wrap justify-center bg-slate-300 rounded pb-8 mb-8 mt-1 mx-2"
+      className="rounded relative p-1 mt-11 mb-2 mx-2 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-300"
     >
-      <div className="basis-full ">
-        <h2 className="text-3xl py-6 ml-6 text-slate-800 font-extrabold">
-          Skills:
-        </h2>
-      </div>
-      <div className="flex flex-wrap gap-2 justify-center">
-        {skillList.map((skill, index) => {
-          return <SkillCard key={"sk" + index} {...skill} />;
-        })}
+      <div className="relative flex flex-wrap justify-center bg-slate-300 rounded pt-16 pb-8">
+        <div className="basis-full absolute -top-[47px] left-12">
+          <SubHeading txt="Skills" />
+        </div>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {skillList.map((skill, index) => {
+            return <SkillCard key={"sk" + index} {...skill} />;
+          })}
+        </div>
       </div>
     </div>
   );
 };
-
 export default SkillsDisplay;

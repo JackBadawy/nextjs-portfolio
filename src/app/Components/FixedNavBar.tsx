@@ -6,7 +6,7 @@ const FixedNavBar = () => {
   return (
     <>
       <div className="w-full h-16"></div>
-      <nav className="flex justify-between items-center fixed top-0 w-screen bg-slate-200/30 backdrop-blur-sm">
+      <nav className="z-50 flex justify-between items-center fixed top-0 w-screen bg-slate-200/30 backdrop-blur-sm">
         <div className="p-2 flex items-center gap-10">
           <Image
             src="/img/logo.svg"
